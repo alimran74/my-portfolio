@@ -227,7 +227,7 @@ footer{
 .footer-column{
     width: 50%;
 }
-input[type="text"],  footer input[type="email"],  footer textarea{
+input[type="text"],  footer input[type="email"]{
     height: 64px;
     border-radius: 5px;
     background-color: white;
@@ -236,4 +236,25 @@ input[type="text"],  footer input[type="email"],  footer textarea{
     margin-bottom: 24px;
     border:3px solid aliceblue;
     font-size: 20px;
+}
+
+
+/* responsive media quary */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    input[type="text"],  footer input[type="email"] {
+        width: calc(100% - 40px);
+
+    }
 }
