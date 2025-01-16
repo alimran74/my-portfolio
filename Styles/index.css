@@ -244,16 +244,43 @@ input[type="text"],  footer input[type="email"]{
     display: none;
 }
 @media screen and (max-width: 576px){
-    .skills-container, .resume-container, footer, .about-items{
+    .skills-container,
+     .resume-container,
+     .banner,
+      footer,
+      nav,
+      nav > ul,
+     .about-items{
         flex-direction: column;
     }
+    nav > ul{
+        gap: 40px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-picture{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+
+
     footer, .about{
         padding: 20px;
     }
     .footer-column{
         width: 100%;
     }
-    input[type="text"],  footer input[type="email"] {
+    input[type="text"], 
+     footer input[type="email"] 
+     {
         width: calc(100% - 40px);
 
     }
