@@ -4,7 +4,7 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 
 
@@ -211,7 +211,7 @@ main section{
 
 
 
-.text-cnter{
+.text-center{
     /* align-items: center; */
     text-align: center;
     margin-top: 50px;
